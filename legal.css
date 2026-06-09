@@ -1,0 +1,76 @@
+/*
+ * Legal pages — privacy + support.
+ *
+ * Long-form readable typography on a contained max-width. Same brand
+ * tokens as the marketing page; the only differences are body type
+ * settings tuned for paragraph-density reading.
+ */
+
+.legal {
+  max-width: 720px;
+  margin: 48px auto 96px;
+  padding: 0 24px;
+}
+
+.legal-header {
+  margin-bottom: 48px;
+  text-align: left;
+}
+.legal-header h1 {
+  font-size: clamp(32px, 5vw, 48px);
+  margin: 8px 0 12px;
+  letter-spacing: -0.02em;
+}
+.legal-updated {
+  font-size: 14px;
+  color: var(--charcoal-muted);
+  margin: 0;
+}
+
+.legal section {
+  margin-bottom: 40px;
+}
+
+.legal h2 {
+  font-size: 22px;
+  margin: 0 0 16px;
+  color: var(--charcoal);
+  border-bottom: 2px solid var(--sage-200);
+  padding-bottom: 8px;
+}
+
+.legal h3 {
+  font-size: 17px;
+  margin: 28px 0 8px;
+  color: var(--deep-sage);
+  font-weight: 700;
+}
+
+.legal p {
+  font-size: 16px;
+  color: var(--charcoal-mid);
+  line-height: 1.65;
+  margin: 0 0 16px;
+}
+
+.legal ul {
+  padding-left: 20px;
+  margin: 0 0 16px;
+}
+.legal li {
+  font-size: 16px;
+  color: var(--charcoal-mid);
+  line-height: 1.65;
+  margin-bottom: 8px;
+}
+.legal li strong { color: var(--charcoal); font-weight: 600; }
+
+.legal-footer-note {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--charcoal-muted);
+  text-align: center;
+  font-style: italic;
+}
