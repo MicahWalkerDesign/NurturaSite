@@ -121,6 +121,27 @@ h3 { font-size: 20px; letter-spacing: -0.01em; }
 }
 .nav-cta:hover { background: var(--sage-700); transform: translateY(-1px); }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.lang-select {
+  background: var(--surface);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  color: var(--charcoal-mid);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+.lang-select:hover, .lang-select:focus {
+  border-color: var(--sage-400);
+  outline: none;
+}
+
 @media (min-width: 768px) {
   .nav-links { display: flex; }
 }

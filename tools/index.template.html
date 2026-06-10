@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="{{LANG_ATTR}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#5E6A3C" />
+
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:description" content="{{description}}" />
+  <meta property="og:url" content="https://micahwalkerdesign.github.io/NurturaSite/" />
+  <meta property="og:image" content="https://micahwalkerdesign.github.io/NurturaSite/assets/screenshots/01-home.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- hreflang alternates for each localized version -->
+{{HREFLANG}}
+
+  <link rel="icon" type="image/png" href="{{ASSET_PREFIX}}assets/icon.png" />
+  <link rel="apple-touch-icon" href="{{ASSET_PREFIX}}assets/icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ASSET_PREFIX}}styles.css" />
+</head>
+<body>
+
+  <!-- ────────── Nav ────────── -->
+  <header class="nav">
+    <a href="#top" class="nav-brand">
+      <img src="{{ASSET_PREFIX}}assets/icon.png" alt="Nurtura" width="32" height="32" />
+      <span>nurtura</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#features">{{nav_features}}</a>
+      <a href="#pregnancy">{{nav_pregnancy}}</a>
+      <a href="#premium">{{nav_premium}}</a>
+      <a href="#privacy">{{nav_privacy}}</a>
+    </nav>
+    <div class="nav-right">
+      <select class="lang-select" onchange="if (this.value) location.href = this.value;" aria-label="Language">
+{{LANG_SWITCHER}}
+      </select>
+      <a href="https://apps.apple.com/app/id6770261130" class="nav-cta" rel="noopener">{{nav_cta}}</a>
+    </div>
+  </header>
+
+  <!-- ────────── Hero ────────── -->
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <div class="hero-badge">{{hero_badge}}</div>
+      <h1 class="hero-title">
+        {{hero_title_line1}}<br />
+        <span class="hero-title-accent">{{hero_title_line2}}</span>
+      </h1>
+      <p class="hero-sub">{{hero_sub}}</p>
+      <div class="hero-ctas">
+        <a href="https://apps.apple.com/app/id6770261130" class="cta cta-primary" rel="noopener">
+          <span class="cta-arrow">↓</span>
+          <span class="cta-label">
+            <span class="cta-eyebrow">{{cta_eyebrow}}</span>
+            <span class="cta-main">{{cta_main}}</span>
+          </span>
+        </a>
+        <a href="#features" class="cta cta-secondary">{{cta_secondary}}</a>
+      </div>
+      <p class="hero-trust">{{hero_trust}}</p>
+    </div>
+    <div class="hero-media">
+      <div class="phone-frame phone-frame--featured">
+        <img src="{{ASSET_PREFIX}}assets/screenshots/01-home.png" alt="Nurtura home screen" loading="eager" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ────────── Value props ────────── -->
+  <section class="values">
+    <div class="value">
+      <div class="value-icon">🌱</div>
+      <h3>{{value1_title}}</h3>
+      <p>{{value1_body}}</p>
+    </div>
+    <div class="value">
+      <div class="value-icon">💡</div>
+      <h3>{{value2_title}}</h3>
+      <p>{{value2_body}}</p>
+    </div>
+    <div class="value">
+      <div class="value-icon">🤝</div>
+      <h3>{{value3_title}}</h3>
+      <p>{{value3_body}}</p>
+    </div>
+  </section>
+
+  <!-- ────────── Features grid ────────── -->
+  <section class="features" id="features">
+    <header class="section-header">
+      <p class="section-eyebrow">{{features_eyebrow}}</p>
+      <h2 class="section-title">{{features_title}}</h2>
+      <p class="section-lead">{{features_lead}}</p>
+    </header>
+
+    <div class="feature-grid">
+      <article class="feature-card feature-card--wide">
+        <div class="feature-copy">
+          <h3>{{feature1_title}}</h3>
+          <p>{{feature1_body}}</p>
+        </div>
+        <div class="feature-media">
+          <div class="phone-frame">
+            <img src="{{ASSET_PREFIX}}assets/screenshots/02-log.png" alt="" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-copy">
+          <h3>{{feature2_title}}</h3>
+          <p>{{feature2_body}}</p>
+        </div>
+        <div class="feature-media">
+          <div class="phone-frame">
+            <img src="{{ASSET_PREFIX}}assets/screenshots/05-insights.png" alt="" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-copy">
+          <h3>{{feature3_title}}</h3>
+          <p>{{feature3_body}}</p>
+        </div>
+        <div class="feature-media">
+          <div class="phone-frame">
+            <img src="{{ASSET_PREFIX}}assets/screenshots/06-journey.png" alt="" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-copy">
+          <h3>{{feature4_title}}</h3>
+          <p>{{feature4_body}}</p>
+        </div>
+        <div class="feature-media">
+          <div class="phone-frame">
+            <img src="{{ASSET_PREFIX}}assets/screenshots/07-partner.png" alt="" loading="lazy" />
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-copy">
+          <h3>{{feature5_title}}</h3>
+          <p>{{feature5_body}}</p>
+        </div>
+        <div class="feature-media">
+          <div class="phone-frame">
+            <img src="{{ASSET_PREFIX}}assets/screenshots/08-privacy.png" alt="" loading="lazy" />
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ────────── Pregnancy section ────────── -->
+  <section class="pregnancy" id="pregnancy">
+    <div class="pregnancy-media">
+      <div class="phone-frame">
+        <img src="{{ASSET_PREFIX}}assets/screenshots/03-pregnancy.png" alt="" loading="lazy" />
+      </div>
+      <div class="phone-frame phone-frame--offset">
+        <img src="{{ASSET_PREFIX}}assets/screenshots/04-fetal-size.png" alt="" loading="lazy" />
+      </div>
+    </div>
+    <div class="pregnancy-text">
+      <p class="section-eyebrow">{{preg_eyebrow}}</p>
+      <h2 class="section-title">{{preg_title_line1}}<br/>{{preg_title_line2}}</h2>
+      <p class="section-lead">{{preg_lead}}</p>
+      <ul class="pregnancy-checks">
+        <li>{{preg_check1}}</li>
+        <li>{{preg_check2}}</li>
+        <li>{{preg_check3}}</li>
+        <li>{{preg_check4}}</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ────────── Premium ────────── -->
+  <section class="premium" id="premium">
+    <div class="premium-card">
+      <p class="premium-eyebrow">{{premium_eyebrow}}</p>
+      <h2 class="premium-title">{{premium_title}}</h2>
+      <p class="premium-sub">{{premium_sub}}</p>
+
+      <ul class="premium-features">
+        <li><span class="premium-feature-title">{{pf1_title}}</span><span class="premium-feature-body">{{pf1_body}}</span></li>
+        <li><span class="premium-feature-title">{{pf2_title}}</span><span class="premium-feature-body">{{pf2_body}}</span></li>
+        <li><span class="premium-feature-title">{{pf3_title}}</span><span class="premium-feature-body">{{pf3_body}}</span></li>
+        <li><span class="premium-feature-title">{{pf4_title}}</span><span class="premium-feature-body">{{pf4_body}}</span></li>
+        <li><span class="premium-feature-title">{{pf5_title}}</span><span class="premium-feature-body">{{pf5_body}}</span></li>
+      </ul>
+
+      <p class="premium-always-free">
+        <strong>{{always_free_label}}</strong> {{always_free_body}}
+      </p>
+
+      <a href="https://apps.apple.com/app/id6770261130" class="cta cta-primary cta-large" rel="noopener">
+        {{premium_cta}}
+      </a>
+    </div>
+  </section>
+
+  <!-- ────────── Privacy strip ────────── -->
+  <section class="privacy-strip" id="privacy">
+    <h2>{{privacy_title}}</h2>
+    <p>{{privacy_body}}</p>
+    <a href="{{ASSET_PREFIX}}privacy.html" class="link">{{privacy_link}}</a>
+  </section>
+
+  <!-- ────────── Footer ────────── -->
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="{{ASSET_PREFIX}}assets/icon.png" alt="" width="28" height="28" />
+      <span>nurtura</span>
+    </div>
+    <nav class="footer-nav">
+      <a href="https://apps.apple.com/app/id6770261130">{{footer_app_store}}</a>
+      <a href="{{ASSET_PREFIX}}privacy.html">{{footer_privacy}}</a>
+      <a href="{{ASSET_PREFIX}}support.html">{{footer_support}}</a>
+      <a href="mailto:support@nurtura.app">{{footer_contact}}</a>
+    </nav>
+    <p class="footer-copy">{{footer_copy}}</p>
+  </footer>
+
+</body>
+</html>
