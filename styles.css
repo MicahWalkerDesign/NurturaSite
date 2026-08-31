@@ -53,6 +53,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
+  overflow-x: hidden;
   font-family: 'Inter', -apple-system, 'SF Pro Text', 'Helvetica Neue', sans-serif;
   color: var(--charcoal);
   background: var(--bg);
@@ -144,6 +145,20 @@ h3 { font-size: 20px; letter-spacing: -0.01em; }
 
 @media (min-width: 768px) {
   .nav-links { display: flex; }
+}
+
+@media (max-width: 520px) {
+  .nav { padding: 14px 16px; gap: 10px; }
+  .nav-brand { font-size: 17px; gap: 8px; white-space: nowrap; }
+  .nav-brand img { width: 28px; height: 28px; }
+  .nav-right { gap: 8px; min-width: 0; }
+  .nav-right .nav-cta { display: none; }
+  .lang-select { width: 134px; max-width: 42vw; }
+  .hero { padding: 52px 24px 80px; }
+  .hero-title { font-size: 40px; overflow-wrap: anywhere; }
+  .hero-sub { font-size: 17px; }
+  .hero-ctas { align-items: stretch; }
+  .hero-ctas .cta { justify-content: center; flex: 1 1 150px; padding-inline: 16px; }
 }
 
 /* ─── Hero ──────────────────────────────────────────────────────────── */

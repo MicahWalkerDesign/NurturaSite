@@ -1,21 +1,22 @@
-# Nurtura — marketing site
+# Leap Journey marketing and legal site
 
-One-page marketing site for [Nurtura Baby Insights](https://apps.apple.com/app/id6770261130) plus the two legal pages Apple requires (`privacy.html` and `support.html`).
+Marketing site for [Leap Journey](https://apps.apple.com/app/id6770261130), with current privacy, terms, and support pages.
 
 ## Stack
 
-Plain HTML + CSS. No framework, no build step, no JavaScript dependencies. The whole site is three HTML files, two stylesheets, and the App Store screenshots.
+Plain HTML + CSS. No framework, runtime JavaScript dependency, analytics, cookies, or remote font request.
 
 ## Structure
 
 ```
 .
 ├── index.html         Marketing page (hero, features, pregnancy, premium, privacy strip)
-├── privacy.html       Privacy policy — linked from Apple's App Store listing
-├── support.html       Support FAQ — linked from Apple's App Store listing
+├── privacy.html       Privacy policy linked from the app and App Store listing
+├── terms.html         Product and one-time-purchase terms
+├── support.html       Accurate support and deletion instructions
 ├── styles.css         Brand tokens + marketing-page layout
 ├── legal.css          Long-form typography for privacy/support pages
-├── CNAME              GitHub Pages custom domain config (nurtura.app)
+├── tools/             Regenerates localized redirects to current English pages
 └── assets/
     ├── icon.png       App icon (used in nav + favicon)
     └── screenshots/   App Store iPhone screenshots (1242 × 2688)
@@ -43,6 +44,6 @@ Any static file server works (`npx serve`, `live-server`, etc.). There is no bui
 
 Replace files in `assets/screenshots/` with the latest from the app repo (`store/apple/screenshot/en-US/APP_IPHONE_65/`). Filenames are referenced from `index.html` — if you rename, update there too.
 
-## Brand
+## Localized URLs
 
-Sage palette + Inter type. All colour tokens are CSS custom properties at the top of `styles.css`; change them once and the whole site shifts.
+Existing locale URLs redirect to the current English pages. Do not restore the removed generated translations unless every translated legal and product claim is reviewed against the shipping release.
